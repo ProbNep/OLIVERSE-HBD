@@ -122,145 +122,38 @@ Because out of everything that happened on that server, meeting you was easily t
     paragraphs: [
       "\n",
       `Back then, my feelings were a complete mess.
-
-You knew.
-
-I knew you knew.
-
+You knew. I knew you knew.
 And somehow, despite both of us knowing, we just never talked about it.
-
-
-
-
-Looking back now, it's honestly funny.
-
-I remember getting jealous over the smallest things. At the time I didn't even fully understand why I felt the way I did. I just knew that whenever you were around, my attention somehow ended up on you.
-
-The way you laughed.
-
-The way you talked.
-
-The way you somehow made every day more interesting without even trying.
+Looking back now, it's honestly funny. I remember getting jealous over the smallest things. At the time I didn't even fully understand why I felt the way I did. I just knew that whenever you were around, my attention somehow ended up on you. The way you laughed. The way you talked. The way you somehow made every day more interesting without even trying. 
 
 
 I remember admiring you long before I properly understood my own feelings.
+Then there was the part where you practically rejected me before you even knew I had feelings. I'm not going to lie That hurt back then. A lot more than I'd ever admit. But in the end, I proved you wrong. And I'm really glad I did.
 
+What I remember most isn't when we got together. It's the first time you said "I love you." 
 
-Then there was the part where you practically rejected me before you even knew I had feelings.
-
-I'm not going to lie.
-
-That hurt back then.
-
-A lot more than I'd ever admit.
-
-But in the end, I proved you wrong.
-
-And honestly, I'm really glad I did.
-
-
-What I remember most isn't when we got together.
-
-It's the first time you said "I love you."
 
 We were just goofing around, taking screenshots, doing what we always did.
-
-Nothing special.
-
-Nothing dramatic.
-
-Just us.
-
-Then I said it.
-
-"I love you."
-
-And when you said it back, I don't think I can properly explain how it felt.
-
-People say butterflies.
-
-For me, it wasn't butterflies.
-
-It felt like a train hit my stomach at full speed.
-
-Everything just stopped for a moment.
-
-I reread it.
-
-Then reread it again.
-
+Nothing special. Just us. Then I typed "I love you." like i always do, cause truth be told I had loved you long before I ever said those words seriously.
+And when you said it back, I don't think I can properly explain how it felt. People say butterflies. For me, it wasn't butterflies. It felt like a train hit my stomach at full speed. Everything just stopped for a moment. I reread it. Then reread it again.
 And then probably a few more times just to make sure it was actually real.
-
 It's one of those moments that stays with you forever.
 
-You'd think that after hearing it so many times it would eventually lose that feeling.
-
-But somehow it never has.
-
-Even now, every single time you say it, it still makes me smile.
-
-No matter how bad my day is.
-
-No matter how stressed I am.
-
-No matter what's going on.
+You'd think that after hearing it so many times it would eventually lose that feeling. But somehow it never has. Even now, every single time you say it, it still makes me smile. No matter how bad my day is. No matter how stressed I am. And no matter what's going on.
 
 Hearing those three words from you somehow makes everything feel lighter.
-
-
 A few days later, on 3/9/26, we officially got together.
 
-And honestly?
-
-It doesn't even feel real sometimes.
-
-We've spent practically every day together since then.
-
-Even before we started dating, we were always around each other.
-
-But after that day, it became us.
-
-Us talking.
-
-Us laughing.
-
-Us staying up too late.
-
-Us sharing our days with each other.
-
-Us building memories together.
-
-As I'm writing this, we've spent approximately 1,456 hours together since getting together.
-
-And that's only counting the time we can actually track.
+And honestly? It doesn't even feel real sometimes. We've spent practically every day together since then. Even before we started dating, we were always around each other. But after that day, it became us. Us talking. Us laughing. Us staying up too late. Us sharing our days with each other. Us building memories together.
+As I'm writing this, we've spent approximately 1,456 hours together since getting together. And that's only counting the time i can actually track.
 
 If we counted every vc we've been in, the number would be much, much higher.
-
 And after all of that, after every conversation, every memory, every laugh, every screenshot, every game, every call, and every moment we've shared...
+If I had the chance to go back and do it all over again from the beginning.
+I would do it again ten billion times over. And i would 10 billion percent fall for you every single time.
 
-If I had the chance to go back and do it all over again from the beginning
 
-\n
-
-\n
-
-\n
-
-Without changing a single thing.
-I would do it again ten billion times over.
-
-I would do it again ten billion times over.
-and i would 10 billion percent fall for you every single time. 
-
-\n
-
-\n
-
-\n
-
-\n
-
-\n`,
+`,
     ],
     images: [],
     playlist: [1],
