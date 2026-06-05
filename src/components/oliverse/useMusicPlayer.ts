@@ -20,7 +20,12 @@ export function useMusicPlayer(playlistIndexes: number[]) {
   const [duration, setDuration] = useState(0);
 
   const playlist: Track[] = useMemo(
-    () => playlistIndexes.map((i) => musicLibrary[i]).filter(Boolean),
+    () => {
+      const fromPlanet = playlistIndexes.map((i) => musicLibrary[i]).filter(Boolean);
+      // Always allow skipping through the full library, with the planet's tracks first.
+      const rest = musicLibrary.filter((t) => !fromPlanet.includes(t));
+      return [...fromPlanet, ...rest];
+    },
     [playlistIndexes],
   );
   const track = playlist[trackIndex];
