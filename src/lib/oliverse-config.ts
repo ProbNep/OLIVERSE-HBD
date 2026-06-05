@@ -21,9 +21,18 @@ export const CREDENTIALS = {
 export const HIDDEN_MESSAGE = {
   title: "One Last Secret",
   body:
-    "Across every galaxy I could imagine, in every universe I could dream of, " +
-    "I would still find my way back to you. Happy Birthday, my love. " +
-    "You are my favorite constellation. — Forever yours.",
+    "A while ago you told me that i deserve the world, and that is something that you might not b able to give.\n" +
+    "but the truth is, i never wanted the whole world.\n" +
+    "i wanted a world with you in it. \n\n\n" +
+    "And to me, that's worth more than the whole world\n\n" +
+    "And when I tell you that I love you more, I don't mean more than you. I mean more than anything else.\n\n" +
+    "Because, baby, you are my world.\n\n\n\n" +
+    "So if one day you ever find yourself wondering what you mean to me, or whether you're enough.\n\n" +
+    " I hope you remember this\n\n" +
+    "I never wanted the world.\n\n" +
+    "I just wanted you.\n\n" +
+    "And somehow, I got lucky enough to have you.\n\n" +
+    "That's more than I could have ever asked for.",
   signature: "✦ Always ✦",
 };
 
