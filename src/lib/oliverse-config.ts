@@ -264,11 +264,14 @@ and i would 10 billion percent fall for you every single time.
     color: "oklch(0.7 0.22 350)",
     glow: "oklch(0.78 0.2 10)",
     ring: false,
-    title: "Letters From My Heart",
+    title: "Random thoughts",
     paragraphs: [
-      "If I could bottle the feeling of you walking into a room, I would carry it through every long day and every dark night. You are my softer place to land.",
-      "Loving you taught me that gravity isn't only a force between bodies — it's a feeling. It's the certainty that no matter how far we drift, we always come back to each other.",
-      "Thank you for being kind to me, especially on the days I forgot to be kind to myself. Thank you for being patient. Thank you for being you.",
+      "\n",
+      `its currently 9 am for you, its 2 days before your birthday, ive been working on this thing for a while now, kinda changing the whole idea every a few days, but hopefully hopefully this one sticks, honestly?, i dont know what i'll be talking about here but, there is a lot i wanna say, but i dont have the time to say it, were usually playing or watching and were both focused like dont get me wrong i love it, but the thing is i would love us to be talking more, it'll take time specially after everything that happened. ( youre breathing in my ear rn, fucking adorable)
+
+
+but sometimes it makes me feel like i am putting too much effort and not getting anything back, makes me wonder how you feel, wondering if you lost feeling, and if i am too much, but then you switch up, and everything changes, you give me all the love and attention that i was wondering where it went, and its just a cycle, my brain thinks of the worst, and i hate, so much, but deep down i know you dont mean to do so, and i can hear you thinking about apologizing for like the 100th time but you dont have to, you have a lot on your mind, and i cant imagine how hard for you everyting is right now, but if there is a small possibilty of me to help you in anyway, dont take it away from me, i want to be the person who lends you a hand, get you through your worst days, makes you smile when you dont feel like smiling, cause a while ago you were this person to me.`,
+      "i want you to be comfortable sharing anything without worrying about me judging you, i've fell for every version of you in ways i couldn't imagine, and i wanna keep doing it.",
     ],
     images: [],
     playlist: [2],
