@@ -69,9 +69,36 @@ export const planets: Planet[] = [
     ring: false,
     title: "Where It All Began",
     paragraphs: [
-      "Once, on an ordinary day that turned out to be anything but, our orbits crossed for the very first time. I didn't know then that a small, quiet moment would grow into the brightest chapter of my life.",
-      "You arrived like sunrise — slow, warm, impossible to ignore. Everything in me leaned toward you, the way planets lean toward their sun. From that day on, every direction I traveled somehow led back to you.",
-      "This is the story of us. Of the laughter, the late-night talks, the rainy afternoons, the unrepeatable little inside jokes. Every word here is a love letter folded inside a constellation.",
+      `It's insane how it's been a year since we met, and whats more crazy is that you sent me a msg exactly a year ago on your birthday.
+
+
+
+
+Back then, neither of us knew what that random Minecraft server would end up meaning to us.
+
+
+
+
+ i was chilling alone, bored so i decided i wanted to play some minecraft, hopped on the minecraft discord and got invited to Synthuism, not expecting much more than another server to play on, owner seemed chill, the community is small but awsome builds, i remember my first base being in a village on a desert, struggled a lot honestly, until we moved into new spawn, got my own area workd my way up into the police force. Then I met you.
+
+
+
+Our first encounter wasn't one of those disney romantic moment where we bump into each other with you ''accidently'' dropping your stuff on the ground an allat. It was a horse.
+
+
+I bought a horse from you and, because I was spending dylan's money and not my own, I paid you more diamonds than I probably should have.
+
+That was it.
+
+
+
+A simple trade between two players.
+
+Looking back now, it's funny how something so small ended up becoming the start of everything, the start of my everything.
+
+As time went on, we started hanging out more. I remember helping you with the fight pit , and I remember looking at your gear and wondering how you had managed to survive for so long using an Efficiency III pickaxe and some of the most random armor enchantments I'd ever seen.\n\nSo naturally, I fixed your armor, upgraded your tools, and probably acted like I knew everything.\n\nThen came one of my favorite memories, the casino.\n\nI had this idea and somehow convinced myself it was brilliant. I got the permit, built the machines, and got everything working.\nI knew it. Everyone knew it.\n\nSo I came to you for help.\n\nAnd without hesitation, you said yes.\n\nWhat started as a building project became something much bigger.\n\nI still remember the opening day. The excitement. The people. The laughs. The bar on the top floor. Watching everyone gather together in a place that didn't exist before.\n\nThen I went on vacation.\nbut still you kept me updated, i was at my worst, but seeing how everyone loved something that i built, we built, it actually made me smile and when I came back, I saw all the changes, all the improvements, and all the love the community had poured into the server. well it was kinda the end of the casino, but.\n\nIt brought people together.\n\nAnd in a way, it brought us together too.\n\n\nWhat I love about these memories is that none of them felt important at the time.\n\nIt was just a horse.\n\nJust a fight pit.\n\nJust a pickaxe.\n\nJust a casino.\n\n\nbut somehow, all those little moments added up to something neither of us could have predicted.\n\nA year later, when I look back at Synthuism, I think about you.\n\nBecause out of everything that happened on that server, meeting you was easily the best thing that came from it.`,
+      "\n",
+      "\n",
     ],
     images: [],
     playlist: [0],
