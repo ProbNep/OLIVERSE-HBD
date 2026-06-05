@@ -82,7 +82,7 @@ export function SpaceJourney({ onLogout }: Props) {
       {/* Top HUD */}
       <div className="absolute top-4 left-4 right-4 z-40 flex items-start justify-between gap-3">
         <div className="glass-panel rounded-full px-4 py-2 text-xs uppercase tracking-[0.3em] text-accent">
-          ✦ OLIVERSE  · MISSION 5726
+          ✦ OLIVERSE  · MISSION J726
         </div>
         <SettingsPanel
           masterVolume={player.masterVolume}
