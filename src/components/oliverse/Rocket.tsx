@@ -64,10 +64,10 @@ export function Rocket({ launching = false }: Props) {
           y="175"
           textAnchor="middle"
           fontFamily="ui-monospace, SFMono-Regular, monospace"
-          fontSize="11"
+          fontSize="7"
           fontWeight="700"
           fill="#0f172a"
-          letterSpacing="3"
+          letterSpacing="2"
           writingMode="tb"
           style={{ writingMode: "vertical-rl" as any }}
         >
