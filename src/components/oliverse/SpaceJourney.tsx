@@ -160,8 +160,8 @@ export function SpaceJourney({ onLogout }: Props) {
             className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-28 pb-32"
           >
             <p className="text-xs uppercase tracking-[0.5em] text-accent">Choose a destination</p>
-            <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-glow text-center max-w-2xl">
-              Four worlds. One story. All yours.
+            <h2 className="mt-3 text-3xl md:text-5xl font-semibold text-glow text-center max-w-2xl whitespace-pre-line">
+              Four worlds. One heart.{"\n"}All yours.
             </h2>
 
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-14">
