@@ -61,15 +61,13 @@ export function Rocket({ launching = false }: Props) {
         {/* Vertical text OLIVE-3926 */}
         <text
           x="60"
-          y="175"
+          y="180"
           textAnchor="middle"
           fontFamily="ui-monospace, SFMono-Regular, monospace"
           fontSize="7"
           fontWeight="700"
           fill="#0f172a"
-          letterSpacing="2"
-          writingMode="tb"
-          style={{ writingMode: "vertical-rl" as any }}
+          letterSpacing="1"
         >
           OLIVE-3926
         </text>
