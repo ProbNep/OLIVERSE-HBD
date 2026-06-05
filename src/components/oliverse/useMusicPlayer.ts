@@ -19,15 +19,9 @@ export function useMusicPlayer(playlistIndexes: number[]) {
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
 
-  const playlist: Track[] = useMemo(
-    () => {
-      const fromPlanet = playlistIndexes.map((i) => musicLibrary[i]).filter(Boolean);
-      // Always allow skipping through the full library, with the planet's tracks first.
-      const rest = musicLibrary.filter((t) => !fromPlanet.includes(t));
-      return [...fromPlanet, ...rest];
-    },
-    [playlistIndexes],
-  );
+  // Single global playlist = full music library. Planet navigation does not
+  // change the currently playing track; only the user can via skip buttons.
+  const playlist: Track[] = useMemo(() => musicLibrary, []);
   const track = playlist[trackIndex];
 
   // Compute effective volume
@@ -128,10 +122,7 @@ export function useMusicPlayer(playlistIndexes: number[]) {
     if (audioRef.current) audioRef.current.currentTime = t;
   }, []);
 
-  // Reset to first track of new playlist
-  useEffect(() => {
-    setTrackIndex(0);
-  }, [playlistIndexes.join(",")]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Intentionally no playlist-reset effect: switching planets must not change the track.
 
   return {
     track,
