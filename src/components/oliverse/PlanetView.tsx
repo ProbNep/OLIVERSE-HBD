@@ -50,7 +50,7 @@ export function PlanetView({ planet, onClose }: Props) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 + i * 0.2, duration: 0.8 }}
-              className="text-lg md:text-xl leading-relaxed text-foreground/90"
+              className="text-lg md:text-xl leading-relaxed text-foreground/90 whitespace-pre-line"
             >
               {p}
             </motion.p>
