@@ -82,6 +82,10 @@ export function SettingsPanel(p: Props) {
                   <LogOut size={14} /> Logout
                 </button>
               </div>
+
+              <p className="mt-6 text-center text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+                Made by Neptune Labs
+              </p>
             </motion.div>
           </>
         )}
