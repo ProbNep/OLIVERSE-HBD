@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Music2, ChevronDown } from "lucide-react";
 import { planets } from "@/lib/oliverse-config";
 import { loadState, saveState } from "@/lib/oliverse-storage";
 import { StarField } from "./StarField";
@@ -16,6 +17,7 @@ export function SpaceJourney({ onLogout }: Props) {
   const initial = loadState();
   const [activeId, setActiveId] = useState<string | null>(initial.lastPlanet);
   const [overlay, setOverlay] = useState<string | null>(null);
+  const [playerMinimized, setPlayerMinimized] = useState(false);
 
   const activePlanet = planets.find((p) => p.id === activeId);
 
@@ -82,24 +84,6 @@ export function SpaceJourney({ onLogout }: Props) {
         <div className="glass-panel rounded-full px-4 py-2 text-xs uppercase tracking-[0.3em] text-accent">
           ✦ Oliverse · Mission OLIVE-3926
         </div>
-        <div className="hidden md:block">
-          <MusicPlayer
-            track={player.track}
-            isPlaying={player.isPlaying}
-            current={player.current}
-            duration={player.duration}
-            musicVolume={player.musicVolume}
-            muted={player.muted}
-            repeat={player.repeat}
-            onToggle={player.toggle}
-            onNext={player.next}
-            onPrev={player.prev}
-            onSeek={player.seek}
-            onVolume={player.setMusicVolume}
-            onMute={() => player.setMuted(!player.muted)}
-            onRepeat={() => player.setRepeat(!player.repeat)}
-          />
-        </div>
         <SettingsPanel
           masterVolume={player.masterVolume}
           musicVolume={player.musicVolume}
@@ -112,24 +96,56 @@ export function SpaceJourney({ onLogout }: Props) {
         />
       </div>
 
-      {/* Mobile mini player */}
-      <div className="md:hidden absolute bottom-4 left-4 right-4 z-40">
-        <MusicPlayer
-          track={player.track}
-          isPlaying={player.isPlaying}
-          current={player.current}
-          duration={player.duration}
-          musicVolume={player.musicVolume}
-          muted={player.muted}
-          repeat={player.repeat}
-          onToggle={player.toggle}
-          onNext={player.next}
-          onPrev={player.prev}
-          onSeek={player.seek}
-          onVolume={player.setMusicVolume}
-          onMute={() => player.setMuted(!player.muted)}
-          onRepeat={() => player.setRepeat(!player.repeat)}
-        />
+      {/* Bottom-right music player with minimize toggle */}
+      <div className="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-2">
+        <AnimatePresence mode="wait" initial={false}>
+          {playerMinimized ? (
+            <motion.button
+              key="mini"
+              initial={{ opacity: 0, scale: 0.7, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.7, y: 10 }}
+              onClick={() => setPlayerMinimized(false)}
+              className="glass-panel rounded-full p-3 hover:scale-110 transition relative"
+              aria-label="Expand player"
+            >
+              <Music2 size={18} className={player.isPlaying ? "text-accent animate-pulse-glow" : ""} />
+            </motion.button>
+          ) : (
+            <motion.div
+              key="full"
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.95 }}
+              transition={{ duration: 0.25 }}
+              className="relative"
+            >
+              <button
+                onClick={() => setPlayerMinimized(true)}
+                className="absolute -top-2 -left-2 z-10 glass-panel rounded-full p-1.5 hover:scale-110 transition"
+                aria-label="Minimize player"
+              >
+                <ChevronDown size={14} />
+              </button>
+              <MusicPlayer
+                track={player.track}
+                isPlaying={player.isPlaying}
+                current={player.current}
+                duration={player.duration}
+                musicVolume={player.musicVolume}
+                muted={player.muted}
+                repeat={player.repeat}
+                onToggle={player.toggle}
+                onNext={player.next}
+                onPrev={player.prev}
+                onSeek={player.seek}
+                onVolume={player.setMusicVolume}
+                onMute={() => player.setMuted(!player.muted)}
+                onRepeat={() => player.setRepeat(!player.repeat)}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* Map */}
