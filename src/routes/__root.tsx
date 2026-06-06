@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Oliverse" },
+      { name: "description", content: "Create a personalized, romantic space-themed website for special occasions." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Oliverse" },
+      { property: "og:description", content: "Create a personalized, romantic space-themed website for special occasions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Oliverse" },
+      { name: "twitter:description", content: "Create a personalized, romantic space-themed website for special occasions." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a8d13e10-f80b-4a12-8523-ec662dedf332/id-preview-74f06fd2--1cec2995-35b3-4899-9020-32dda1c05178.lovable.app-1780785246849.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a8d13e10-f80b-4a12-8523-ec662dedf332/id-preview-74f06fd2--1cec2995-35b3-4899-9020-32dda1c05178.lovable.app-1780785246849.png" },
     ],
     links: [
       {
