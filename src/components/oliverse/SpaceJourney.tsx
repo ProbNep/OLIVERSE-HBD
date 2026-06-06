@@ -10,6 +10,7 @@ import { MusicPlayer } from "./MusicPlayer";
 import { SettingsPanel } from "./SettingsPanel";
 import { FinalStar } from "./FinalStar";
 import { useMusicPlayer } from "./useMusicPlayer";
+import { sfx } from "@/lib/oliverse-sfx";
 
 type Props = { onLogout: () => void };
 
@@ -45,6 +46,7 @@ export function SpaceJourney({ onLogout }: Props) {
   }, []);
 
   function openPlanet(id: string) {
+    sfx.open();
     setActiveId(id);
     saveState({ lastPlanet: id });
     const planet = planets.find((p) => p.id === id);
@@ -55,6 +57,7 @@ export function SpaceJourney({ onLogout }: Props) {
   }
 
   function closePlanet() {
+    sfx.close();
     setActiveId(null);
     saveState({ lastPlanet: null });
   }

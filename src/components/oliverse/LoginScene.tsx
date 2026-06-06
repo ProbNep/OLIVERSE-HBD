@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { StarField } from "./StarField";
 import { Rocket } from "./Rocket";
 import { CREDENTIALS } from "@/lib/oliverse-config";
+import { sfx } from "@/lib/oliverse-sfx";
 
 type Props = { onAuthenticated: () => void };
 
@@ -18,11 +19,13 @@ export function LoginScene({ onAuthenticated }: Props) {
     if (username.trim() === CREDENTIALS.username && password === CREDENTIALS.password) {
       setError(null);
       setHideUi(true);
+      sfx.launch();
       // Give UI a moment to fade, then ignite
       setTimeout(() => setLaunching(true), 700);
       // After the rocket clears the sky, hand off to the journey
       setTimeout(() => onAuthenticated(), 4800);
     } else {
+      sfx.error();
       setError("Mission control denied — wrong access codes.");
       setTimeout(() => setError(null), 3200);
     }
