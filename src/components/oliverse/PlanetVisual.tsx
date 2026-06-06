@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { Planet } from "@/lib/oliverse-config";
+import { sfx } from "@/lib/oliverse-sfx";
 
 type Props = {
   planet: Planet;
@@ -12,6 +13,7 @@ export function PlanetVisual({ planet, size = 140, onClick, className = "" }: Pr
   return (
     <motion.button
       onClick={onClick}
+      onHoverStart={() => sfx.hover()}
       whileHover={{ scale: 1.07 }}
       whileTap={{ scale: 0.95 }}
       className={`group relative inline-flex flex-col items-center gap-3 outline-none ${className}`}

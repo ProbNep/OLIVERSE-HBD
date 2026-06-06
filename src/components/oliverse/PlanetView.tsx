@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import type { Planet } from "@/lib/oliverse-config";
 import { X } from "lucide-react";
+import { sfx } from "@/lib/oliverse-sfx";
 
 type Props = { planet: Planet; onClose: () => void };
 
@@ -18,7 +19,7 @@ export function PlanetView({ planet, onClose }: Props) {
     >
       {/* Close */}
       <button
-        onClick={onClose}
+        onClick={() => { sfx.close(); onClose(); }}
         className="fixed top-5 right-5 z-50 glass-panel rounded-full p-2 hover:scale-110 transition"
         aria-label="Return to space"
       >

@@ -29,18 +29,22 @@ export function SpaceJourney({ onLogout }: Props) {
   );
   const player = useMusicPlayer(playlist);
 
-  // Try auto-play after first user gesture (browsers require this).
+  // Autoplay: the login click already counts as a user gesture, so we can
+  // start immediately. Fall back to next gesture if the browser still blocks.
   useEffect(() => {
-    const tryStart = () => {
+    let started = false;
+    const start = () => {
+      if (started) return;
+      started = true;
       player.play();
-      window.removeEventListener("pointerdown", tryStart);
-      window.removeEventListener("keydown", tryStart);
     };
-    window.addEventListener("pointerdown", tryStart);
-    window.addEventListener("keydown", tryStart);
+    start();
+    const retry = () => start();
+    window.addEventListener("pointerdown", retry);
+    window.addEventListener("keydown", retry);
     return () => {
-      window.removeEventListener("pointerdown", tryStart);
-      window.removeEventListener("keydown", tryStart);
+      window.removeEventListener("pointerdown", retry);
+      window.removeEventListener("keydown", retry);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

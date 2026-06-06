@@ -13,8 +13,8 @@
 
 // 🔐 LOGIN CREDENTIALS — change these to whatever you want
 export const CREDENTIALS = {
-  username: "oliver",
-  password: "olive 3926",
+  username: "olive",
+  password: "3926",
 };
 
 // 💌 The hidden final message revealed by the distant star

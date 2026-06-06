@@ -1,6 +1,12 @@
 import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Repeat } from "lucide-react";
 import { formatTime } from "./useMusicPlayer";
 import type { Track } from "@/lib/oliverse-config";
+import { sfx } from "@/lib/oliverse-sfx";
+
+const withClick = (fn: () => void) => () => {
+  sfx.click();
+  fn();
+};
 
 type Props = {
   track?: Track;
@@ -38,7 +44,7 @@ export function MusicPlayer(p: Props) {
             <p className="truncate text-xs text-muted-foreground">{p.track.artist}</p>
           </div>
           <button
-            onClick={p.onRepeat}
+            onClick={withClick(p.onRepeat)}
             className={`p-1.5 rounded-md transition ${p.repeat ? "text-accent" : "text-muted-foreground hover:text-foreground"}`}
             aria-label="Repeat"
           >
@@ -67,21 +73,21 @@ export function MusicPlayer(p: Props) {
           </span>
         </div>
         <div className="mt-1 flex items-center gap-2">
-          <button onClick={p.onPrev} className="p-1.5 rounded-md hover:bg-white/5" aria-label="Previous">
+          <button onClick={withClick(p.onPrev)} className="p-1.5 rounded-md hover:bg-white/5" aria-label="Previous">
             <SkipBack size={16} />
           </button>
           <button
-            onClick={p.onToggle}
+            onClick={withClick(p.onToggle)}
             className="btn-cosmic p-2 rounded-full hover:scale-105 transition"
             aria-label={p.isPlaying ? "Pause" : "Play"}
           >
             {p.isPlaying ? <Pause size={16} /> : <Play size={16} />}
           </button>
-          <button onClick={p.onNext} className="p-1.5 rounded-md hover:bg-white/5" aria-label="Next">
+          <button onClick={withClick(p.onNext)} className="p-1.5 rounded-md hover:bg-white/5" aria-label="Next">
             <SkipForward size={16} />
           </button>
           <div className="ml-auto flex items-center gap-1.5">
-            <button onClick={p.onMute} className="p-1.5 rounded-md hover:bg-white/5" aria-label="Mute">
+            <button onClick={withClick(p.onMute)} className="p-1.5 rounded-md hover:bg-white/5" aria-label="Mute">
               {p.muted ? <VolumeX size={14} /> : <Volume2 size={14} />}
             </button>
             <input

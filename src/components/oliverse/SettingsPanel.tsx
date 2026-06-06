@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Settings, LogOut, X } from "lucide-react";
 import { useState } from "react";
 import type { Track } from "@/lib/oliverse-config";
+import { sfx } from "@/lib/oliverse-sfx";
 
 type Props = {
   masterVolume: number;
@@ -19,7 +20,7 @@ export function SettingsPanel(p: Props) {
   return (
     <>
       <button
-        onClick={() => setOpen(true)}
+        onClick={() => { sfx.open(); setOpen(true); }}
         className="glass-panel rounded-full p-2.5 hover:scale-110 transition"
         aria-label="Settings"
       >
@@ -34,7 +35,7 @@ export function SettingsPanel(p: Props) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="fixed inset-0 z-50 bg-background/70 backdrop-blur-sm"
-              onClick={() => setOpen(false)}
+              onClick={() => { sfx.close(); setOpen(false); }}
             />
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.95 }}
@@ -45,7 +46,7 @@ export function SettingsPanel(p: Props) {
             >
               <div className="flex items-center justify-between mb-5">
                 <h2 className="text-lg font-semibold text-glow">Spaceship Settings</h2>
-                <button onClick={() => setOpen(false)} aria-label="Close">
+                <button onClick={() => { sfx.close(); setOpen(false); }} aria-label="Close">
                   <X size={18} />
                 </button>
               </div>
@@ -69,14 +70,14 @@ export function SettingsPanel(p: Props) {
                 <Slider label="Music volume" value={p.musicVolume} onChange={p.onMusicVolume} />
 
                 <button
-                  onClick={p.onMuteToggle}
+                  onClick={() => { sfx.click(); p.onMuteToggle(); }}
                   className="w-full rounded-lg border border-border bg-input py-2.5 text-sm hover:bg-white/5 transition"
                 >
                   {p.muted ? "Unmute" : "Mute"} audio
                 </button>
 
                 <button
-                  onClick={p.onLogout}
+                  onClick={() => { sfx.close(); p.onLogout(); }}
                   className="w-full rounded-lg border border-destructive/40 bg-destructive/15 text-destructive-foreground py-2.5 text-sm font-medium flex items-center justify-center gap-2 hover:bg-destructive/25 transition"
                 >
                   <LogOut size={14} /> Logout
