@@ -14,7 +14,7 @@
 // 🔐 LOGIN CREDENTIALS — change these to whatever you want
 export const CREDENTIALS = {
   username: "oliver",
-  password: "stardust",
+  password: "olive 3926",
 };
 
 // 💌 The hidden final message revealed by the distant star
@@ -45,12 +45,20 @@ export type Track = {
   audio: string; // path or URL
 };
 
+import kissAudio from "@/assets/music/kiss-it-off-me.mp3.asset.json";
+import sweetAudio from "@/assets/music/sweet.mp3.asset.json";
+import nothingAudio from "@/assets/music/nothings-gonna-hurt-you-baby.mp3.asset.json";
+import apocalypseAudio from "@/assets/music/apocalypse.mp3.asset.json";
+import kissCover from "@/assets/covers/kiss-it-off-me.jpg.asset.json";
+import sweetCover from "@/assets/covers/sweet.jpg.asset.json";
+import nothingCover from "@/assets/covers/nothings-gonna-hurt-you-baby.jpg.asset.json";
+import apocalypseCover from "@/assets/covers/apocalypse.jpg.asset.json";
+
 export const musicLibrary: Track[] = [
-  // Replace these placeholders with your own files.
-  { title: "Drifting Home", artist: "Aurora Skies", cover: "/music/covers/track1.jpg", audio: "/music/track1.mp3" },
-  { title: "Cosmic Letter", artist: "Stellar Hearts", cover: "/music/covers/track2.jpg", audio: "/music/track2.mp3" },
-  { title: "Stardust Lullaby", artist: "Nebula Choir", cover: "/music/covers/track3.jpg", audio: "/music/track3.mp3" },
-  { title: "Gravity of You", artist: "Orbit", cover: "/music/covers/track4.jpg", audio: "/music/track4.mp3" },
+  { title: "Kiss It Off Me", artist: "Cigarettes After Sex", cover: kissCover.url, audio: kissAudio.url },
+  { title: "Sweet", artist: "Cigarettes After Sex", cover: sweetCover.url, audio: sweetAudio.url },
+  { title: "Nothing's Gonna Hurt You Baby", artist: "Cigarettes After Sex", cover: nothingCover.url, audio: nothingAudio.url },
+  { title: "Apocalypse", artist: "Cigarettes After Sex", cover: apocalypseCover.url, audio: apocalypseAudio.url },
 ];
 
 // 🪐 Planets — edit names, colors, and per-planet content
